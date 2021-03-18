@@ -6,11 +6,11 @@
 
 It stands for `eXtreme Gradient Boosting` which enables us to use `Gradient Boosted Decision Tree algorithms`. A continuous process of calculating errors, predictions, and Ensemble is what Gradient Boosted Decision Tree does.
 
--	**_Errors:** Taking an existing model and calculating errors from each observation of the dataset to build a new model to predict these errors._
+-	_**Errors:** Taking an existing model and calculating errors from each observation of the dataset to build a new model to predict these errors._
 
--	**_Predictions:** Adding up previous predictions, calculating new errors from those, or to ensemble them._
+-	_**Predictions:** Adding up previous predictions, calculating new errors from those, or to ensemble them._
 
--	**_Ensemble:** Putting together all the models from which errors can be calculated from select models to create better models._
+-	_**Ensemble:** Putting together all the models from which errors can be calculated from select models to create better models._
 
 ### Setting up the environment
 
@@ -24,15 +24,15 @@ It stands for `eXtreme Gradient Boosting` which enables us to use `Gradient Boos
 
 One of the limitations of XGBoost is it can’t operate on a raw data, the data needs to be in a `matrix format` i.e., dataframe in `numeric format` (DMatrix for XGBoost). The data used for this experiment is not in a matrix or all numeric format which is why cleaning is to be done by,
 
-   1.	**_Remove information about the target variable from the training data:** Removal of information is necessary because this’ll impact on the predicted outcome and give us accurate results (avoid leakage)._
+   1.	_**Remove information about the target variable from the training data:** Removal of information is necessary because this’ll impact on the predicted outcome and give us accurate results (avoid leakage)._
 
-   2.	**_Reduce the amount of redundant information:** Eliminating redundant information which is of no use in order to predict and non-numeric variables to create a matrix._
+   2.	_**Reduce the amount of redundant information:** Eliminating redundant information which is of no use in order to predict and non-numeric variables to create a matrix._
 
-   3.	**_Convert categorical information (like country) to a numeric format:** To convert non-numeric variables into numeric one-hot encoding can be used which will categories each observation and shuffle them in 0 (belongs to the column) & 1 (doesn’t belong to the column)_
+   3.	_**Convert categorical information (like country) to a numeric format:** To convert non-numeric variables into numeric one-hot encoding can be used which will categories each observation and shuffle them in 0 (belongs to the column) & 1 (doesn’t belong to the column)_
 
-   4.	**_Split dataset into testing and training subsets:** Splitting the dataset into training (70%) & testing (30%) to check the robustness of the model for prediction._
+   4.	_**Split dataset into testing and training subsets:** Splitting the dataset into training (70%) & testing (30%) to check the robustness of the model for prediction._
 
-   5.	**_Convert the cleaned dataframe to a Dmatrix:** Converting matrixes into dmatrixes for it to train the model in multiple cores._
+   5.	_**Convert the cleaned dataframe to a Dmatrix:** Converting matrixes into dmatrixes for it to train the model in multiple cores._
 
 #### Training our model
 
@@ -52,9 +52,9 @@ If the model’s error is low then there’s no worries, but if it is slightly h
 
 To see if the model is `under-fitting` or using important information to produce the output,
 
-1.	**_Imbalanced classes:** It is the proportion to which the categories are in volume, since one category can impact on the output if it is more than the other._
+1.	_**Imbalanced classes:** It is the proportion to which the categories are in volume, since one category can impact on the output if it is more than the other._
 
-2.	**_More training rounds:** Early or longer training may result in high error rate which can be guarded by early_stopping_rounds which will stop the training if no improvements._
+2.	_**More training rounds:** Early or longer training may result in high error rate which can be guarded by early_stopping_rounds which will stop the training if no improvements._
 
 #### Examining the model
 
