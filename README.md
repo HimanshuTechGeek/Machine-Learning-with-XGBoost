@@ -6,6 +6,8 @@
 
 It stands for `eXtreme Gradient Boosting` which enables us to use `Gradient Boosted Decision Tree algorithms`. A continuous process of calculating errors, predictions, and Ensemble is what Gradient Boosted Decision Tree does.
 
+![alt tag](https://i.imgur.com/e7MIgXk.png)
+
 -	_**Errors:** Taking an existing model and calculating errors from each observation of the dataset to build a new model to predict these errors._
 
 -	_**Predictions:** Adding up previous predictions, calculating new errors from those, or to ensemble them._
