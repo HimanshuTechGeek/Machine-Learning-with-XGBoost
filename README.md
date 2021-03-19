@@ -40,7 +40,7 @@ After cleaning the dataset and splitting into training & testing, `training` on 
 
 1.	_**What training data to use**: a dmatrix format is required to train the dataset_
 
-2.	_**The number of training rounds:** The number of times a Naïve model should be improved by adding additional models (Fig. 1: one circle = 1 boosting)_
+2.	_**The number of training rounds:** The number of times a Naïve model should be improved by adding additional models (one circle = 1 boosting round)_
 
 3.	_**What the objective function is:** What task is to be performed, depending on the dataset (linear, multiple or logistic regression)_
 
